@@ -1,0 +1,60 @@
+/* HEADER GRID */
+
+.header {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, auto);
+
+	grid-template-areas: "bar 	bar	 	bar		bar"
+						 ". 	. 		desc 	desc"
+						 "name 	. 		info 	info"
+}
+
+
+
+.header__bar {
+	grid-area: bar;
+}
+
+.header__desc {
+	grid-area: desc;
+	align-self: center;
+}
+
+.header__info {
+	grid-area: info;
+	align-self: center;
+}
+
+.header__name {
+	grid-area: name;
+	align-self: end;
+	justify-self: end;
+}
+
+
+
+/*Grid bar*/
+
+.header__bar {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 1, auto;
+	grid-template-areas: "logo 	search 	nav   nav"
+}
+
+.header__bar > i {
+	grid-area: logo;
+	align-self: center;
+	justify-self: center;
+}
+
+.header__search {
+	grid-area: search;
+}
+
+.header__ul {
+	grid-area: nav;
+	justify-self: center;
+}
