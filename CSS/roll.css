@@ -1,0 +1,58 @@
+.controles {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.controles__title {
+	color: #fff;
+	font-size: 30px;
+	
+}
+
+
+/*   CONTENEDOR PRINCIPAL Y FLECHAS   */
+
+
+.contenedor-carousel /*contenedor principal*/{
+	color: white;
+	margin-bottom: 70px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.contenedor-carousel .flecha-izquierda,
+.contenedor-carousel .flecha-derecha {
+	position: absolute;
+	border: none;
+	background: rgba(0,0,0, 0.3);
+	font-size: 40px;
+	height: 50%;
+	top: calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.contenedor-carousel .flecha-izquierda {
+	left: 0;
+}
+
+.contenedor-carousel .flecha-derecha {
+	right: 0;
+}
+
+
+.contenedor-carousel .flecha-izquierda:hover,
+.contenedor-carousel .flecha-derecha:hover {
+	background: rgba(0,0,0, 0.9);
+}
+
+
+.carousel {
+
+}

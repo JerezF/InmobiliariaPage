@@ -1,0 +1,60 @@
+.mini-nav {
+	padding: 5rem;
+	background-color: #E1DEDE;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.nav__phone {
+	background-color: #F4F4F4;
+	margin: auto;
+	padding: 5em;
+	text-align: center;
+	
+	border: 2px solid #DCDADA;
+	border-radius: 20px;
+	box-shadow: .2em .2em teal;
+}
+
+.nav__mail {
+	background-color: #F4F4F4;
+	margin: auto;
+	padding: 5em;
+	text-align: center;
+
+	border: 2px solid #DCDADA;
+	border-radius: 20px;
+	box-shadow: .2em .2em teal;
+
+}
+
+.nav__help {	
+	background-color: #F4F4F4;
+	margin: auto;
+	padding: 5em;
+	text-align: center;
+
+	border: 2px solid #DCDADA;
+	border-radius: 20px;
+	box-shadow: .2em .2em teal;
+
+}
+
+.nav__phone:hover,
+.nav__mail:hover,
+.nav__help:hover {
+	
+	cursor: pointer;
+	background-color: #B8B6B6;
+	border: 2px solid #B8B6B6;
+	border-radius: 20px;
+	box-shadow: .2em .2em #056045;
+}
+
+.svg-inject {
+	max-width: 50px;
+	max-height: 50px;
+}

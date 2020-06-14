@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria</title>
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./grid.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/grid.css">
+    <link rel="stylesheet" href="CSS/mini-nav.css">
+    <link rel="stylesheet" href="CSS/roll.css">
     <script src="https://kit.fontawesome.com/0ed2410a38.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,51 +16,84 @@
     <header class="header">
         <div class="header__bar">
             <i class="fas fa-feather-alt"></i>
-            <input type="text" class="header__search">
+            <!-- barra de busqueda -->
+            <div class="header__search">
+            <input type="text" class="search" name="search">
+            <button type="submit"class="search__boton" value=""><i class="fas fa-search-location"></i></button>
+            </div>
             <ul class="header__ul">
                 <li class="header__ul-li"><a href="#" class="header__ul-a">HOME</a></li>
                 <li class="header__ul-li"><a href="#" class="header__ul-a">DEPARTAMENTOS</a></li>
                 <li class="header__ul-li"><a href="#" class="header__ul-a">CONTACTO</a></li>
             </ul>
         </div>
-        <p class="header__desc"> des des des des des des des des</p>
-        <p class="header__info"> info info info info info</p>
+        <p class="header__desc"> Paradela Inmobiliaria, es una empresa de servicios inmobiliarios dedicada a asesorar, acompañar y generar negocios, trabajando constantemente para brindar la mejor atención a sus clientes con seriedad, respeto y profesionalismo.
+       </p>
+        <p class="header__info"> Visión: Generar valor en los negocios inmobiliarios. Estar a la vanguardia del mercado, brindando un servicio profesional y especializado.    </p>
         <h3 class="header__name"></i> Feather Inmobiliaria</h3>
     </header>
+
+
         <!--MINI NAV -->
-        <nav class="nav">
+        <nav class="mini-nav">
             <div class="nav__phone">
-                <i class="fas fa-mobile-alt"></i>
+                <img src="SVG/telefono-inteligente.svg" class="svg-inject" alt="phone"/>
                 <h3 class="phone__h3">Telefono</h3>
                 <p class="phone__p">+542914747148</p>
             </div>
             <div class="nav__mail">
-                <i class="fas fa-envelope"></i>
+                <img src="SVG/correo.svg" class="svg-inject" alt="mail-svg"/>
                 <h3 class="mail__h3">Email</h3>
                 <p class="mail__h3">francomjerez@gmail.com</p>
             </div>
             <div class="nav__help">
-                <i class="far fa-question-circle"></i>
+                <img src="SVG/help.svg" class="svg-inject" alt="help"/>
                 <h3 class="help__h3">Ayuda</h3>
                 <p class="help__h3">Sala de chat de 8 a 20hs</p>
             </div>
         </nav>
+
+
             <!-- ALQUILERS -->
         <main class="main">
-            <div class="main-img">
-                <img src="" alt="">
-                <p class="main-img__info">lugar lugar lugar lugar</p>
-            </div>
+                <div class="controles">
+                    <h3 class="controles__title">ALQUILERES RECOMENDADOS</h3>
+                    <div class="indicadores">
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
             <!-- alquileres img -->
-            <div class="all-img">
-                <img src="media/alquiler-1.jpg" alt="frente" class="alquiler">
-                <img src="media/alquiler-2.jpg" alt="cocina" class="alquiler">
-                <img src="media/alquiler-3.jpg" alt="rio" class="alquiler">
-                <img src="media/alquiler-4.jpg" alt="escalera" class="alquiler">
-                <img src="media/alquiler-5.jpg" alt="living" class="alquiler">
-            </div>
+                <div class="contenedor-carousel">
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-chevron-left"></i></button>
+
+
+                    <div class="carousel">
+                        <div class="alquiler">
+                            <img src="media/alquiler-1.jpg" alt="frente" class="alquiler">
+                        </div>
+                        <div class="alquiler">
+                            <img src="media/alquiler-2.jpg" alt="cocina" class="alquiler">                        
+                        </div>
+                        <div class="alquiler">
+                            <img src="media/alquiler-3.jpg" alt="rio" class="alquiler">   
+                        </div>
+                        <div class="alquiler">
+                            <img src="media/alquiler-4.jpg" alt="escalera" class="alquiler">
+                        </div>
+                        <div class="alquiler">
+                            <img src="media/alquiler-5.jpg" alt="living" class="alquiler">
+                        </div>
+                    </div> <!-- alquileres -->
+
+
+                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-chevron-right"></i></button>
+                </div>
         </main>
         
+
+
+
         <!-- FOOTER -->
         <footer class="footer">
             <p class="footer_copyright"><i class="far fa-copyright">copyright</i></p>
@@ -74,7 +109,8 @@
             </div>
         </footer>
     </div>
-
+    
+    
     <!-- END -->
 </body>
 </html>

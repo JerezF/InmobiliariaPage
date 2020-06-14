@@ -19,7 +19,7 @@
 
 .header__desc {
 	grid-area: desc;
-	align-self: center;
+	align-self: end;
 }
 
 .header__info {
@@ -30,7 +30,7 @@
 .header__name {
 	grid-area: name;
 	align-self: end;
-	justify-self: end;
+	justify-self: start;
 }
 
 
